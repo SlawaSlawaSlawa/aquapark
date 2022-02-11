@@ -1,0 +1,14 @@
+.header {
+    background-color: yellow;
+    display: flex;
+}
+
+@media (max-width: 1200px) {
+    .header {
+        font-size: 20px;
+
+        p {
+            color: #000;
+        }
+    }
+}
