@@ -1,14 +1,61 @@
 .header {
-    background-color: yellow;
-    display: flex;
+	display: flex;
+	justify-content: space-between;
+	font-family: 'Proxima Nova', sans-serif;
+	font-size: $header-fz;
+	line-height: $header-lh;
+	padding: 28px 0;
 }
 
-@media (max-width: 1200px) {
-    .header {
-        font-size: 20px;
-
-        p {
-            color: #000;
-        }
-    }
+.logo {
+	width: 115px;
+	&__img {
+		width: 100%;
+	}
 }
+
+.nav__list {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav__item {
+	margin-right: 30px;
+}
+
+.nav__link {
+	border-radius: 10px;
+	/*color: #fff;*/
+	color: #000;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 10px 15px;
+	transition: color .3s ease;
+
+	&:hover {
+		color: $active-color;
+	}
+
+	&--active:hover {
+		color: #fff;
+	}
+} 
+
+.phone {
+	align-items: center;
+	color: #000;
+	display: flex;
+	text-decoration: none;
+
+	&__text {
+		text-decoration: none;
+		text-transform: uppercase;
+		padding: 10px 15px;
+		transition: color .3s ease;
+	}
+	&:hover {
+		color: $active-color;
+	}
+}
+
