@@ -1,0 +1,130 @@
+.hero {
+	background-color: $default-bg-color;
+	background-image: url('../../img/hero-bg.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	padding-bottom: 64px;
+}
+
+.hero:after {
+	content: "";
+	background-image: url("../../img/cloud.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 70px;
+	bottom: 0;
+	left: 0;
+}
+
+.title {
+	font-size: 78px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: bold;
+	max-width: 680px;
+	line-height: 1;
+	position: relative;
+
+	span {
+		position: relative;
+	}
+
+	span:before {
+		background-image: url('../../img/title-clock.png');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+		content: '';
+		display: block;
+		position: absolute;
+		top: 17px;
+		left: 2px;
+		width: 55px;
+		height: 55px;		
+		z-index: 10;
+	}
+
+	span:after {
+		content: '';
+		background-color: #fff;
+		position: absolute;
+		display: block;
+		width: 38px;
+		height: 40px;
+		top: 26px;
+		left: 10px;
+	}
+}
+
+.title:before {
+	content: "";
+	background-image: url("../../img/title-spray.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 356px;
+	top: 0;
+	left: 0;
+}
+
+.hero__description {
+	font-size: 30px;
+	line-height: 36px;
+	color: #fff;
+	max-width: 420px;
+	margin-bottom: 40px;
+}
+
+.btn-have-tick__wrapper {
+	background-color: #fff;
+	border-radius: 50%;
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	top: 0;
+	left: 0;
+	width: 54px;
+	height: 54px;
+}
+
+.tickets-btn__wrapper {
+	position: relative;
+	display: inline-block;
+	margin-bottom: 280px;
+}
+
+.btn--have-tick {
+	background-color: $active-color;
+	display: flex;
+	align-items: center;
+	position: relative;
+	padding-left: 70px;
+	color: #fff;
+	z-index: 10;
+}
+
+.tickets-btn__text--action {
+}
+
+.btn--have-tick--more {
+	position: absolute;
+	top: 0;
+	right: -196px;
+	background-color: #fff;
+	color: $active-color;
+	text-align: left;
+	padding-top: 9px;
+	padding-bottom: 9px;
+	padding-left: 80px;
+	z-index: 5;
+}

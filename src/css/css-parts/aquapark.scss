@@ -1,0 +1,137 @@
+.aquapark {
+	padding-top: 134px;
+	padding-bottom: 134px;	
+}
+
+.aquapark-items-wrapper {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.aquapark-item {
+	border-radius: 3px;
+	position: relative;
+	width: 48%;
+	/*overflow: hidden;*/
+}
+
+.aquapark-item img {
+	border-radius: 3px;
+	display: block;
+	width: 100%;
+	height: 570px;
+}
+
+.aquapark-item:not(:first-child) img {
+	width: 80%;
+}
+
+.aquapark-item:nth-child(even)  {
+	margin-top: 140px;
+}
+
+.aquapark-item:nth-child(2):before  {
+	content: "";
+	display: block;
+	background-image: url("../../img/aquapark-logos/lifebuoy-purple.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+	right: 0;
+	bottom: 158px;
+	width: 149px;
+	height: 244px;
+}
+
+.aquapark-item:nth-child(3):before  {
+	content: "";
+	display: block;
+	background-image: url("../../img/aquapark-logos/lifebuoy-blue.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+	top: 20px;
+	left: 0;
+	width: 95px;
+	height: 147px;
+}
+
+.aquapark-item:nth-child(3):after  {
+	content: "";
+	display: block;
+	background-image: url("../../img/aquapark-logos/lifebuoy-red.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+	top: 50px;
+	left: -100px;
+	width: 200px;
+	height: 322px;
+}
+
+.aquapark-item:nth-child(4):before  {
+	content: "";
+	display: block;
+	background-image: url("../../img/aquapark-logos/lifebuoy-green.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+	top: -84px;
+	right: -79px;
+	width: 291px;
+	height: 270px;
+	z-index: 20;
+}
+
+.aquapark-item:nth-child(3)  {
+	margin-top: -108px;
+
+	img {
+		margin-left: auto;
+	}
+
+	.aquapark-item__log {
+		right: 20px;
+		left: auto;
+	}
+}
+
+.aquapark-item:nth-child(4)  {
+	margin-top: 70px;
+}
+
+.aquapark-item__title {
+    font-family: 'Proxima Nova';
+	font-size: 30px;
+	text-transform: uppercase;
+	line-height: 36px;
+	margin-bottom: -10px;
+}
+.aquapark-item__description {
+	font-size: 18px;
+	color: #949494;
+}
+
+.aquapark-item__img {
+	position: relative;
+}
+
+.aquapark-item__log {
+    font-family: 'Proxima Nova';
+	font-size: 200px;
+	line-height: 124px;
+	color: #fff;
+	position: absolute;
+	left: 20px;
+	bottom: 0;
+
+	img {
+		width: 136px;
+		height: 136px;
+	}
+}

@@ -1,0 +1,88 @@
+.photos {
+	padding-bottom: 176px;
+}
+
+.photos-item--big {
+	width: 670px;
+}
+
+.big-spray {
+	position: absolute;
+	top: -38px;
+	left: 0;
+}
+
+.photos-item--min {
+	position: relative;
+	width: 470px;
+}
+
+.photos-item__title {
+    font-family: 'Proxima Nova';
+	font-size: 60px;
+	line-height: 30px;
+	color: #50c3ff;
+	text-transform: uppercase;
+	margin-bottom: 50px;
+}
+
+.photos-item__title--inst {
+	color: #ff2a75;
+	margin-bottom: 10px;
+}
+
+.photos-item__name-icon {
+	margin-right: 10px;
+}
+
+.photos-item__name {
+	display: flex;
+	align-items: center;
+    font-family: 'Proxima Nova';
+	font-size: 20px;
+	line-height: 30px;
+	color: #2e2e2e;
+	margin-bottom: 8px;
+	transition: color .3s ease;
+}
+
+.photos-item__name:hover {
+	color: $active-color;
+}
+
+.photos-item__img {
+	width: 270px;
+	height: 170px;
+}
+
+.photos-item__img:nth-child(even) {
+	width: 170px;
+	height: 170px;
+}
+
+.photo-item__link {
+	text-decoration: none;
+}
+
+.photos-item-wrapper {
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+}
+
+.photos-item__img-wrapper {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-bottom: 35px;
+}
+
+.photos-item__img-wrapper--reverse {
+	flex-direction: row-reverse;
+}
+
+.decor {
+	position: absolute;
+	bottom: -218px;
+	right: 138px;
+}

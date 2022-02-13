@@ -1,6 +1,7 @@
 .header {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	font-family: 'Proxima Nova', sans-serif;
 	font-size: $header-fz;
 	line-height: $header-lh;
@@ -20,17 +21,25 @@
 	align-items: center;
 }
 
-.nav__item {
-	margin-right: 30px;
+.nav__item:not(:last-child) {
+	margin-right: 5px;
+}
+
+.nav__item--active {
+	background-color: red;
+	border-radius: 20px;
+}
+
+.nav__item--active:hover .nav__link {
+	color: #fff;
 }
 
 .nav__link {
-	border-radius: 10px;
-	/*color: #fff;*/
-	color: #000;
+	display: inline-block;
+	color: #fff;
 	text-decoration: none;
 	text-transform: uppercase;
-	padding: 10px 15px;
+	padding: 6px 15px;
 	transition: color .3s ease;
 
 	&:hover {
@@ -44,7 +53,7 @@
 
 .phone {
 	align-items: center;
-	color: #000;
+	color: #fff;
 	display: flex;
 	text-decoration: none;
 
