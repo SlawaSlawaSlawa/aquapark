@@ -1,0 +1,166 @@
+.prices {
+	background-color: #50c3ff;
+	padding-top: 100px;
+}
+
+.prices-item-wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.prices-item {
+	border-radius: 3px;
+	background-color: #fff;
+	margin-bottom: 20px;
+	width: 370px;
+	overflow: hidden;
+}
+
+.prices-item__header {
+	display: flex;
+	padding: 0;
+}
+
+.prices-item--opt {
+	.prices-item__title {
+		background-color: #ffc528;
+			.prices-item__time {
+			color: #ffc528;
+		}
+	}
+	.btn--order {
+		border-color: #ffc528;
+		color: #ffc528;
+	}
+}
+
+.prices-item--max {
+	.prices-item__title {
+		background-color: #ff1a3a;
+			.prices-item__time {
+			color: #ff1a3a;
+		}
+	}
+	.btn--order {
+		border-color: #ff1a3a;
+		color: #ff1a3a;
+	}
+}
+
+.prices-item__title {
+	background-color: #64cf47;
+    font-family: 'Proxima Nova';
+	font-size: 22px;
+	line-height: 36px;
+	width: 254px;
+	margin: 0;
+	padding: 30px 20px;
+	position: relative;
+	color: #fff;
+	text-transform: uppercase;
+
+	.prices-item__time {
+		background-color: #fff;
+		border-radius: 50%;
+		box-shadow: 0 1px 10px #ccc;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		text-transform: lowercase;
+		font-size: 16px;
+		line-height: 13px;
+		color: #64cf47;
+		position: absolute;
+		top: 50%;
+		right: 0;
+		transform: translate(50%, -50%);
+		width: 46px;
+		height: 46px;
+	}
+}
+
+.prices-item__notes {
+	background-color: #f8f8f8;
+	width: 116px;
+}
+
+.prices-item__schedule {
+	text-align: center;
+	width: 100%;
+	th {
+	    font-family: 'Proxima Nova';
+		font-size: 18px;
+		line-height: 36px;
+		color: #2e2e2e;
+	}
+
+	td {
+		font-size: 16px;
+		line-height: 36px;
+		color: #949494;
+	}
+}
+
+.prices-item__price {
+	text-align: center;
+	margin-left: auto;
+	width: 290px;
+
+	th {
+		font-size: 14px;
+		line-height: 36px;
+		color: #2e2e2e;
+	}
+
+	td {
+	    font-family: 'Proxima Nova';
+		font-size: 30px;
+		line-height: 36px;
+		color: #50c3ff;
+	}
+
+	td.min-font {
+		font-size: 16px;
+	}
+}
+
+.btn--order {
+	align-items: center;
+	border: 2px solid #64cf47;	
+	color: #64cf47;
+	display: flex;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 220px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 54px;
+	z-index: 10;
+}
+
+.tickets-btn__img-wrapper {
+	border-radius: 50%;
+	box-shadow: 0 1px 10px #ccc;
+	background-color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	top: 50%;
+	left: 71px;
+	transform: translateY(-50%);
+	width: 50px;
+	height: 50px;
+	z-index: 50;
+}
+
+
+.prices-item__footer {
+	position: relative;
+	border-top: 4px solid #f8f8f8;
+	min-height: 100px;
+}
+		

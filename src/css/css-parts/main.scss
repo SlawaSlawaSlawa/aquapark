@@ -30,17 +30,26 @@ $header-fz: 16px;
 $header-lh: 24px;
 $main-fz: 18px;
 $main-lh: 36px;
+$main-color: #50c3ff;
 $white-color: #fff;
 $active-color: #ff1a3a;
 $default-bg-color: #ffe242;
 $btn-fz: 16px;
 $btn-lh: 18px;
 
+* {
+	box-sizing: border-box;
+}
+
 body {
 	box-sizing: border-box;
     font-family: 'Proxima Nova Rg', sans-serif;
 	font-size: $main-fz;
 	line-height: $main-lh;
+}
+
+input {
+	box-sizing: border-box;
 }
 
 .container {
@@ -65,4 +74,13 @@ ul {
 	background-color: #fff;
 	cursor: pointer;
 	text-transform: uppercase;
+}
+
+.section__title {
+    font-family: 'Proxima Nova';
+	font-size: 60px;
+	line-height: 1;
+	margin-top: 0;
+	margin-bottom: 36px;
+	color: #fff;
 }

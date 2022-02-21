@@ -1,71 +1,77 @@
 <section class="news" id="news">
-	<div class="news__header">
-		<div class="news__header-wrapper">
-			<h2 class="section__title">
-				ПОДПИШИТЕСЬ НА НОВОСТИ И АКЦИИ
-			</h2>
-			<span class="section__title-description">
-				И следите за актуальными предложениями аквапарка
-			</span>
+	<div class="container">
+		<div class="news__header">
+			<div class="news__header-wrapper">
+				<h2 class="section__title section__title--news">
+					ПОДПИШИТЕСЬ<br>НА НОВОСТИ И АКЦИИ
+				</h2>
+				<span class="section__title-description">
+					И следите за актуальными предложениями аквапарка
+				</span>
+			</div>
+
+			<form class="subscribe-form">
+				<input type="text" class="subscribe-form__input" placeholder="Ваше имя">
+				<input type="email" class="subscribe-form__input" placeholder="Ваш e-mail">
+				<span class="subscribe-form__notes">
+					*отказаться от рассылки можно в любой момент
+				</span>
+				<button class="subscribe-btn">
+					ПОДПИСАТЬСЯ
+				</button>
+			</form>
 		</div>
+		<!-- /.news__header -->
 
-		<form class="subscribe-form">
-			<input type="text" class="subscribe-form__input">
-			<input type="email" class="subscribe-form__input">
-			<span class="subscribe-form__notes">
-				*отказаться от рассылки можно в любой момент
-			</span>
-			<button class="subscribe-btn">
-				ПОДПИСАТЬСЯ
-			</button>
-		</form>
+		<ul class="news__list">
+			<li class="news__list-item">
+				<img src="./img/news/news-1.jpg" alt="Бассейн" class="news__img">
+				<h3 class="news__list-title news__list-title--new">
+					18 марта 2017г. аквапарк не работает
+				</h3>
+				<p class="news__list-description">
+					Проводятся ремонтные работы
+					Самарскими Коммунальными Системами.
+					Водоснабжение приостановлено.
+				</p>
+			</li>
+			<!-- /.news__list-item -->
+			<li class="news__list-item">
+				<img src="./img/news/news-2.jpg" alt="Бассейн" class="news__img">
+				<h3 class="news__list-title">
+					Ежедневный режим работы
+				</h3>
+				<p class="news__list-description">
+					С 25 марта Аквапарк переходит
+					на ежедневный режим работы.
+					Ждем всех в гости!
+				</p>
+			</li>
+			<!-- /.news__list-item -->
+			<li class="news__list-item">
+				<img src="./img/news/news-3.jpg" alt="Бассейн" class="news__img">
+				<h3 class="news__list-title">
+					Похолодало! А в Аквапарке +32
+				</h3>
+				<p class="news__list-description">
+					Ждем Вас ежедневно с 11:00 до 19:00
+					без перерывов и выходных!
+				</p>
+			</li>
+			<!-- /.news__list-item -->
+		</ul>
+
+			<div class="news__btns-wrapper">
+				<button class="btn btn--more">
+					ЗАГРУЗИТЬ ЕЩЕ
+				</button>
+
+				<button class="btn btn--vk">
+					<span class="btn__vk-img-wrapper">
+						<img src="./img/social-icons/vk-icon.png" alt="Иконка: VK" class="tickets-btn__img">
+					</span>
+					ВСТУПИТЬ В ГРУППУ В ВК
+				</button>
+			</div>
 	</div>
-	<!-- /.news__header -->
-
-	<ul class="news__list">
-		<li class="news__list-item">
-			<img src="./img/news/news-1.jpg" alt="Бассейн" class="news__img">
-			<h3 class="news__list-title news__list-title--new">
-				18 марта 2017г. аквапарк не работает
-			</h3>
-			<p class="news__list-description">
-				Проводятся ремонтные работы
-				Самарскими Коммунальными Системами.
-				Водоснабжение приостановлено.
-			</p>
-		</li>
-		<!-- /.news__list-item -->
-		<li class="news__list-item">
-			<img src="./img/news/news-2.jpg" alt="Бассейн" class="news__img">
-			<h3 class="news__list-title news__list-title--new">
-				Ежедневный режим работы
-			</h3>
-			<p class="news__list-description">
-				С 25 марта Аквапарк переходит
-				на ежедневный режим работы.
-				Ждем всех в гости!
-			</p>
-		</li>
-		<!-- /.news__list-item -->
-		<li class="news__list-item">
-			<img src="./img/news/news-3.jpg" alt="Бассейн" class="news__img">
-			<h3 class="news__list-title news__list-title--new">
-				Похолодало! А в Аквапарке +32
-			</h3>
-			<p class="news__list-description">
-				Ждем Вас ежедневно с 11:00 до 19:00
-				без перерывов и выходных!
-			</p>
-		</li>
-		<!-- /.news__list-item -->
-
-		<button class="btn btn--more">
-			ЗАГРУЗИТЬ ЕЩЕ
-		</button>
-
-		<button class="btn btn--vk">
-			<img src="./img/social-icons/vk-icon.png" alt="Иконка: VK" class="tickets-btn__img">
-			ВСТУПИТЬ В ГРУППУ В ВК
-		</button>
-	</ul>
 </section>

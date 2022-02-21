@@ -49,7 +49,6 @@ function scss() {
         }))
         .pipe(gulpif(isDev, sourcemaps.write()))
         .pipe(dest('./dist/css/'))
-        .pipe(browserSync.stream());
 }
 
 function scripts() {
@@ -94,7 +93,7 @@ function watcher() {
     })
 
     watch('./src/**/*.html', html).on('change', browserSync.reload)
-    watch('./src/css/**/*.scss', scss)
+    watch('./src/css/**/*.scss', scss).on('change', browserSync.reload)
     watch('./src/js/**/*.js', scripts)
     watch('./src/img/**/*', images)
     watch('./src/fonts/**/*', fonts)
