@@ -135,3 +135,49 @@
 		height: 136px;
 	}
 }
+
+@media (max-width: 1200px) {
+	.aquapark-item img {
+		height: auto;
+	}
+
+	.aquapark-item:nth-child(3) {
+    	margin-top: -72px;
+	}
+}
+
+@media (max-width: 748px) {
+	.container {
+		overflow: hidden;
+	}
+
+	.aquapark {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+
+	.aquapark-item {
+		width: 100%;
+	}
+
+	.aquapark-item:not(:last-child) {
+		margin-bottom: 50px;
+	}
+
+	.aquapark-item:nth-child(even) {
+    	margin-top: 0;
+    }
+
+    .aquapark-item:nth-child(3) {
+    	margin-top: 0;
+	}
+
+	.aquapark-item__title {
+		margin-bottom: 6px;
+	}
+
+	.aquapark-item__description {
+		display: block;
+		line-height: 1.4;
+	}
+}
