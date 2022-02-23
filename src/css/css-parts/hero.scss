@@ -5,6 +5,7 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
+	padding-top: 180px;
 	padding-bottom: 64px;
 }
 
@@ -30,6 +31,7 @@
 	max-width: 680px;
 	line-height: 1;
 	position: relative;
+	margin-top: 0;
 
 	span {
 		position: relative;
@@ -103,13 +105,25 @@
 	margin-bottom: 280px;
 }
 
+.tickets-btn__wrapper:hover .btn--have-tick {
+	background-color: $white-color;
+	color: $active-color;
+}
+
+.tickets-btn__wrapper:hover .btn--have-tick--more {
+	background-color: $active-color;
+	color: $white-color;
+}
+
+
 .btn--have-tick {
 	background-color: $active-color;
 	display: flex;
 	align-items: center;
 	position: relative;
 	padding-left: 70px;
-	color: #fff;
+	color: $white-color;
+	transition: color .3s ease, background-color .3s ease;
 	z-index: 10;
 }
 
@@ -126,5 +140,6 @@
 	padding-top: 9px;
 	padding-bottom: 9px;
 	padding-left: 80px;
+	transition: color .3s ease, background-color .3s ease;
 	z-index: 5;
 }

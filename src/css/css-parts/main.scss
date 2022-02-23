@@ -41,6 +41,10 @@ $btn-lh: 18px;
 	box-sizing: border-box;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	box-sizing: border-box;
     font-family: 'Proxima Nova Rg', sans-serif;
@@ -64,6 +68,11 @@ ul {
 	padding: 0;
 }
 
+.break {
+	display: none;
+	flex-basis: 100%;
+}
+
 .btn {
 	font-size: $btn-fz;
 	line-height: $btn-lh;
@@ -80,7 +89,42 @@ ul {
     font-family: 'Proxima Nova';
 	font-size: 60px;
 	line-height: 1;
+	position: relative;
 	margin-top: 0;
 	margin-bottom: 36px;
 	color: #fff;
+}
+
+.decor-bottom {
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	background-color: rgba(255, 255, 255, .8);
+	position: absolute;
+	width: 90%;
+	height: 7px;
+	bottom: -7px;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 20;
+}
+
+.decor-bottom:before {
+	content: "";
+	display: block;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	background-color: rgba(255, 255, 255, .5);
+	position: absolute;
+	width: 86%;
+	height: 14px;
+	bottom: -7px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+@media (max-width: 1200px)  {
+	.container {
+		padding-right: 20px;
+		padding-left: 20px;
+	}
 }

@@ -19,6 +19,12 @@
 		flex-direction: row-reverse;
 		gap: 14px;
 	}
+	&__social-item {
+		transition: opacity .3s ease;
+	}
+	&__social-item:hover {
+		opacity: .7;
+	}
 	&__description {
 		flex-basis: 60%;
 	}

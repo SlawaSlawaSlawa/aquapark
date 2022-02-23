@@ -1,5 +1,34 @@
 .photos {
+	position: relative;
 	padding-bottom: 176px;
+	z-index: 100;
+}
+
+.photos:after {
+	content: "";
+	background-image: url("../../img/photos-bg.png");
+	background-position: center;
+	background-size: cover;
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	width: 100%;
+	height: 346px;
+	z-index: -1;
+}
+
+.photos:before {
+	content: "";
+	background-color: $main-color;
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 100%;
+	height: 50%;
+	z-index: -1;
 }
 
 .photos-item--big {
@@ -15,6 +44,21 @@
 .photos-item--min {
 	position: relative;
 	width: 470px;
+}
+
+.photos-item--min:after {
+	content: "";
+	background-image: url("../../img/spray-inst-bottom.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: block;
+	width: 284px;
+	height: 105px;
+	position: absolute;
+	bottom: -50px;
+	left: -60px;
+	z-index: 20;
 }
 
 .photos-item__title {

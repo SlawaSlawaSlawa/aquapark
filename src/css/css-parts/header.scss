@@ -1,11 +1,20 @@
 .header {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
 	font-family: 'Proxima Nova', sans-serif;
 	font-size: $header-fz;
 	line-height: $header-lh;
 	padding: 28px 0;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1000;
+}
+
+.container--header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .logo {
@@ -51,6 +60,73 @@
 	}
 } 
 
+.burger {
+	display: none;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	width: 40px;
+	height: 30px;
+	padding: 0;
+	overflow: hidden;
+
+	& span {
+		display: block;
+		position: relative;
+		width: 100%;
+		height: 4px;
+		background-color: #fff;
+		border-radius: 3px;
+		transition: transform .3s ease;
+	}
+
+	& span:before {
+		content: "";
+		display: block;
+		width: 100%;
+		height: 4px;
+		background-color: #fff;
+		border-radius: 3px;
+		position: absolute;
+		top: -12px;
+		left: 0;
+		z-index: 20;
+		transition: transform .3s ease;
+	}
+
+	& span:after {
+		content: "";
+		display: block;
+		width: 100%;
+		height: 4px;
+		background-color: #fff;
+		border-radius: 3px;
+		position: absolute;
+		top: 12px;
+		left: 0;
+		z-index: 20;
+		transition: transform .3s ease;
+	}
+}
+
+.burger--active {
+
+	& span {
+		height: 0;
+		transition: transform .3s ease;
+	}
+
+	& span:before {
+			top: 50%;
+			transform: translateY(-50%) rotate(45deg);
+	}
+
+	& span:after {
+		top: 50%;
+		transform: translateY(-50%) rotate(-45deg);
+	}
+}
+
 .phone {
 	align-items: center;
 	color: #fff;
@@ -66,5 +142,221 @@
 	&:hover {
 		color: $active-color;
 	}
+
+	&__img {
+		width: 35px;
+		height: 35px;
+	}
 }
 
+@media (max-width: 1158px) {
+	.header {
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 1024px) {
+	.title {
+		font-size: 74px;
+		& span:before {
+			top: 15px;
+			left: 1px;
+		}
+		& span:after {
+			top: 23px;
+		}
+	}
+
+	.tickets-btn__wrapper {
+		margin-bottom: 200px;
+	}
+
+	.nav__item {
+		margin-right: 0;
+	}
+}
+
+@media (max-width: 1000px) {
+	.nav__link {
+		padding: 4px 12px;
+	}
+}
+
+@media (max-width: 960px) {
+	.header {
+	    font-size: 18px;
+	}
+
+	.title {
+		font-size: 60px;
+		line-height: 1.2;
+		max-width: 540px;
+
+		& span:before {
+			display: none;
+		}
+		& span:after {
+			display: none;
+		}
+	}
+
+	.hero__description {
+		font-size: 28px;
+	}
+
+	.nav__list {
+		display: flex;
+		position: absolute;
+		top: 20px;
+		right: -100%;
+		flex-direction: column;
+	    gap: 10px;
+	    background-color: $main-color;
+    	border-radius: 3px;
+    	padding-top: 80px;
+    	padding-bottom: 20px;
+    	width: 300px;
+    	transition: right .3s ease;
+	}
+
+	.nav__list--active {
+		right: 0;
+	}
+
+	.nav__item {
+	    	border-radius: 0;
+	    	margin-right: 0;
+	    	width: 100%;
+	    }
+	    .nav__link {
+	    	width: 100%;
+	    	padding: 10px 20px 10px 20px;
+	    }
+	    .nav__item:not(:last-child) {
+	    	margin-right: 0;
+	}
+
+	.burger {
+		display: block;
+	}
+}
+
+@media (max-width: 658px) {
+	.hero {
+		background-position: 65% center;
+		padding-top: 136px;
+	}
+
+	.title {
+		max-width: 100%;
+		margin-bottom: 74px;
+		text-align: center;
+	}
+
+	.hero__description {
+		max-width: 100%;
+		text-align: center;
+		margin-bottom: 80px;
+	}
+}
+
+@media (max-width: 540px) {
+	.btn {
+		font-size: 14px;
+	}
+
+	.btn--have-tick {
+		padding-right: 12px;
+		padding-left: 60px;
+	}
+
+	.btn--have-tick--more {
+		top: 1px;
+		right: -168px;
+		padding-top: 8px;
+		padding-left: 65px;
+	}
+
+	.hero {
+		height: 100vh;
+	}
+
+	.title {
+		font-size: 50px;
+	}
+
+	.hero__description {
+    	margin-bottom: 168px;
+	}
+
+	.tickets-btn__wrapper {
+		margin-bottom: 0;
+	}
+}
+
+@media (max-width: 480px) {
+	.container--header {
+		flex-wrap: wrap;
+	}
+
+	.phone {
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 420px) {
+	.hero {
+		padding-top: 160px;
+	}
+
+	.break {
+		display: block;
+	}
+
+	.logo {
+		margin-bottom: 20px;
+	}
+
+	.phone {
+		font-size: 16px;
+	}
+
+	.burger {
+		position: absolute;
+		top: 28px;
+		right: 15px;
+	}
+
+	.title {
+		font-size: 28px;
+		margin-bottom: 50px;
+	}
+
+	.hero__description {
+    // margin-bottom: 128px;
+    margin-bottom: 50px;
+    font-size: 24px;
+}
+
+	.btn-have-tick__wrapper {
+		width: 48px;
+		height: 48px;
+	}
+
+	.btn--have-tick, .btn--have-tick--more {
+		font-size: 12px;
+	    padding-left: 52px;
+	}
+
+	.btn--have-tick {
+		padding-top: 15px;
+	    padding-bottom: 15px;
+	}
+
+	.btn--have-tick--more {
+		padding-left: 18px;
+		top: 39px;
+		right: -100px;
+		text-align: center;
+	}
+}

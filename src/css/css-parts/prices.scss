@@ -1,6 +1,32 @@
 .prices {
 	background-color: #50c3ff;
-	padding-top: 100px;
+	position: relative;
+	padding-top: 20px;
+	padding-bottom: 100px;
+
+	&:after {
+		content: "";
+		display: block;
+		background-image: url("../../img/prices-bg.png");
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		position: absolute;
+		width: 100%;
+		height: 228px;
+		right: 0;
+		left: 0;
+		bottom: -64px;
+		z-index: -1;
+	}
+
+	&-item {
+		position: relative;
+		border-radius: 3px;
+		background-color: #fff;
+		margin-bottom: 20px;
+		width: 370px;
+	}
 }
 
 .prices-item-wrapper {
@@ -8,17 +34,42 @@
 	justify-content: space-between;
 }
 
-.prices-item {
-	border-radius: 3px;
-	background-color: #fff;
-	margin-bottom: 20px;
-	width: 370px;
-	overflow: hidden;
+.prices-item__notes {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.prices-item__notes-img {
+	background-image: url("../../img/cool-icon.png");
+	background-repeat: no-repeat;
+	background-position: center 8px;
+	background-size: contain;
+	width: 54px;
+	height: 54px;
+}
+
+.section__title--prices:before {
+	content: "";
+	background-image: url("../../img/spray-for-prices.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	top: -50px;
+	left: -50px;
+	display: block;
+	width: 266px;
+	height: 154px;
+	z-index: 10;
 }
 
 .prices-item__header {
 	display: flex;
+	border-top-right-radius: 3px;
+	border-top-left-radius: 3px;
 	padding: 0;
+	overflow: hidden;
 }
 
 .prices-item--opt {
@@ -31,6 +82,12 @@
 	.btn--order {
 		border-color: #ffc528;
 		color: #ffc528;
+		transition: color .3s ease, background-color .3s ease;
+	}
+
+	.btn--order:hover {
+		background-color: #ffc528;
+		color: $white-color;
 	}
 }
 
@@ -44,6 +101,12 @@
 	.btn--order {
 		border-color: #ff1a3a;
 		color: #ff1a3a;
+		transition: color .3s ease, background-color .3s ease;
+	}
+
+	.btn--order:hover {
+		background-color: $active-color;
+		color: $white-color;
 	}
 }
 
@@ -138,7 +201,13 @@
 	padding-top: 10px;
 	padding-bottom: 10px;
 	padding-left: 54px;
+	transition: color .3s ease, background-color .3s ease;
 	z-index: 10;
+}
+
+.btn--order:hover {
+	background-color: #64cf47;
+	color: $white-color;
 }
 
 .tickets-btn__img-wrapper {
