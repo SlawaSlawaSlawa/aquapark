@@ -32,6 +32,7 @@
 .prices-item-wrapper {
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 .prices-item__notes {
@@ -232,4 +233,139 @@
 	border-top: 4px solid #f8f8f8;
 	min-height: 100px;
 }
+
+@media (max-width: 1176px) {
+	.prices-item__title {
+		font-size: 20px;
+	}
+	.prices-item {
+		width: 32%;
+	}
+}
+
+@media (max-width: 1169px) {
+	.tickets-btn__img-wrapper {
+		left: 60px;
+	}
+}
+
+@media (max-width: 1100px) {
+	.tickets-btn__img-wrapper {
+		left: 40px;
+	}
+}
+
+@media (max-width: 1058px) {
+	.prices-item__title {
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 996px) {
+	.prices-item__title {
+		text-align: center;
+		width: 225px;
+	}
+
+	.prices-item__notes {
+		width: 80px;
+	}
+
+	.prices-item__notes-img {
+		width: 40px;
+		height: 40px;
+	}
+	.prices-item__title .prices-item__time {
+		font-size: 14px;
+		width: 40px;
+		height: 40px;
+	}
+	.prices-item__price td {
+		font-size: 26px;
+	}
+
+	.tickets-btn__img-wrapper {
+		left: 20px;
+	}
+}
+
+@media (max-width: 944px) {
+	.prices-item__schedule td {
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 900px) {
+	.prices-item {
+		width: 48%;
+		margin-bottom: 50px;
+	}
+	.prices-item__title {
+		width: 80%;
+	}
+	.prices-item__notes {
+		width: 20%;
+	}
+}
+
+@media (max-width: 678px) {
+	.prices-item {
+		width: 49%;
+		margin-bottom: 50px;
+	}
+}
+
+@media (max-width: 600px) {
+	.prices-item-wrapper {
+		justify-content: center;
+	}
+	.prices-item {
+		width: 60%;
+	}
+}
+
+@media (max-width: 520px) {
+	.prices-item {
+		width: 80%;
+	}
+}
+
+@media (max-width: 460px) {
+	.container {
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+	.prices-item {
+		width: 100%;
+	}
+}
+
+@media (max-width: 318px) {
+	.prices-item__schedule th {
+		font-size: 12px;
+		line-height: 1.2;
+	}
+
+	.prices-item__price th {
+		font-size: 12px;
+		line-height: 1.2;
+	}
+
+	.prices-item__header {
+		margin-bottom: 16px;
+	}
+
+	.prices-item__price td {
+		font-size: 20px;
+	}
+
+	.prices-item__price td.min-font {
+		font-size: 14px;
+	}
+
+	.prices-item__price {
+		width: 100%;
+	}
+}
+
 		
