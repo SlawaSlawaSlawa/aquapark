@@ -16,7 +16,6 @@
 	top: -36%;
 	left: -92%;
 	z-index: 20;
-
 }
 
 .contacts-wrapper {
@@ -104,4 +103,25 @@
 
 .contacts-map {
 	flex-grow: 1;
+}
+
+@media (max-width: 768px) {
+	.contacts-wrapper {
+		flex-wrap: wrap;
+	}
+	.contacts-info {
+		max-width: 100%;
+		width: 100%;
+		margin-bottom: 20px;
+		margin-right: 0;
+	}
+}
+
+@media (max-width: 576px) {
+	.contacts-map {
+		height: 298px;
+	}
+	.contacts-map iframe {
+		height: 100%;
+	}
 }
