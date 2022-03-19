@@ -155,6 +155,9 @@
 }
 
 @media (max-width: 968px) {
+	.photos {
+		padding-bottom: 80px;
+	}
 	.photos-item-wrapper {
 		flex-wrap: wrap;
 	}
