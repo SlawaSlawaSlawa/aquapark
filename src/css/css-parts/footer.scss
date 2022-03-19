@@ -43,3 +43,24 @@
 		color: #fff;
 	}
 }
+
+@media (max-width: 768px) {
+	.footer__description {
+	    background-color: rgba(64, 158, 239, .7);
+	    border-radius: 5px;
+		padding: 20px;	
+	}
+}
+
+
+@media (max-width: 576px) {
+	.footer__wrapper {
+		flex-wrap: wrap;
+	}
+	.footer__description {
+		flex-basis: 100%;
+		width: 100%;	
+		padding: 10px;
+	}
+
+}
