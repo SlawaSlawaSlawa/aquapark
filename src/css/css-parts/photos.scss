@@ -6,7 +6,7 @@
 
 .photos:after {
 	content: "";
-	background-image: url("../../img/photos-bg.png");
+	background-image: url("../img/photos-bg.png");
 	background-position: center;
 	background-size: cover;
 	display: block;
@@ -48,7 +48,7 @@
 
 .photos-item--min:after {
 	content: "";
-	background-image: url("../../img/spray-inst-bottom.png");
+	background-image: url("../img/spray-inst-bottom.png");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;

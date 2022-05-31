@@ -11,6 +11,11 @@
 	z-index: 1000;
 }
 
+.header--active {
+	background-color: #50c3ff;
+	box-shadow: 0 5px 10px rgba(73, 73, 78, 30%);
+}
+
 .container--header {
 	display: flex;
 	justify-content: space-between;

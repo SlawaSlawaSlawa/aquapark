@@ -7,7 +7,7 @@
 	&:after {
 		content: "";
 		display: block;
-		background-image: url("../../img/prices-bg.png");
+		background-image: url("../img/prices-bg.png");
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -42,7 +42,7 @@
 }
 
 .prices-item__notes-img {
-	background-image: url("../../img/cool-icon.png");
+	background-image: url("../img/cool-icon.png");
 	background-repeat: no-repeat;
 	background-position: center 8px;
 	background-size: contain;
@@ -52,7 +52,7 @@
 
 .section__title--prices:before {
 	content: "";
-	background-image: url("../../img/spray-for-prices.png");
+	background-image: url("../img/spray-for-prices.png");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;

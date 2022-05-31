@@ -19,7 +19,7 @@ const del = require('del');
 const browserSync = require('browser-sync').create();
 
 
-const jsFiles = ['./src/js/one.js', './src/js/two.js']
+const jsFiles = ['./src/js/burger.js', './src/js/scrollForHeader.js']
 let isDev = true
 
 
